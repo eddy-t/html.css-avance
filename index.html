@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="vendors/css/reboot.css" />
   <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
   <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+  <script src="resources/js/navbar.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
@@ -18,20 +19,21 @@
     <nav>
       <div class="row">
         <img class="logo" src="resources/img/logo.svg" alt="logo boutique">
-        <h1>sos-phone</h1>
-        <ul class="main-nav">
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Nouveautés</a></li>
-          <li><a href="#">Panier</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <h1><a class="titre" href="index.html">sos-phone</a></h1>
+        <div class="topnav" id="myTopnav">
+         <a href="#home" class="active">Nos Boutiques</a>
+         <a href="#news">FAQ</a>
+         <a href="#contact">Contact</a>
+         <a href="#about">Comment Commander ?</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+       </div>
       </div>
     </nav>
     <div class="boutique-text-box">
       <!-- première rangé -->
-      <h1>Lorem Ipsum</h1>
-      <a class="btn btn-ghost" href="#">Lorem</a>
-      <a class="btn btn-ghost" href="#">Ipsum</a>
+      <h1>Application mobile disponible</h1>
+      <a class="btn btn-ghost" href="#"><i class="ion-social-apple"></i>Iphone</a>
+      <a class="btn btn-ghost" href="#"><i class="ion-social-android"></i>Android</a>
     </div>
   </header>
   <!--Les livres-->
@@ -92,7 +94,7 @@
 <!-- Mobile -->
   <section>
     <div class="row">
-      <h2>Boutique disponible sur mobile</h2>
+      <h2 class="app-mobile">Boutique disponible sur mobile</h2>
     </div>
     <div class="row">
       <!-- image iphone-->
@@ -120,7 +122,7 @@
   </section>
   <section>
     <div class="row">
-      <h2 class="titre-centre">nos centres de formations</h2>
+      <h2 class="titre-centre">nos boutiques</h2>
     </div>
       <div class="row">
         <div class="col-md-3 col-boutiques">

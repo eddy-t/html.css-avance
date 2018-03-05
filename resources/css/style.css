@@ -1,4 +1,115 @@
 /* ------------------- GENERAL -----------------*/
+@media screen and (max-width: 480px) {
+ .topnav a:not(:first-child) {display: none;}
+ .topnav a.icon {
+   float: right;
+   display: block;
+ }
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+ .topnav a:not(:first-child) {display: none;}
+ .topnav a.icon {
+   float: right;
+   display: block;
+ }
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+ .boutique-text-box {
+   display: inline-block;
+   margin: 0 auto;
+   padding-top: 60%;
+   padding-left: 20%;
+ }
+ .btn {
+   margin-left: 15%;
+   margin-bottom: 10%;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+ .boutique-text-box {
+   display: inline-block;
+   margin: 0 auto;
+   padding-top: 110%;
+   padding-left: 23%;
+ }
+ .btn {
+   margin-left: 15%;
+   margin-bottom: 10%;
+ }
+}
+
+@media screen and (max-width: 720px) {
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+ .boutique-text-box {
+   display: inline-block;
+   margin: 0 auto;
+   padding-top: 40%;
+   padding-left: 23%;
+ }
+ .btn {
+   margin-left: 15%;
+   margin-bottom: 10%;
+ }
+}
+
+@media screen and (max-width: 840px) {
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+}
+
+@media screen and (max-width: 960px) {
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+}
+
+@media screen and (max-width: 1080px) {
+ .iphone {
+   margin-right: 22%;
+   width: auto;
+ }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+ .topnav.responsive {position: relative;}
+ .topnav.responsive a.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ .topnav.responsive a {
+   float: none;
+   display: block;
+   text-align: left;
+ }
+}
 
 html {
   background: #fff;
@@ -59,7 +170,7 @@ h2::after{
 }
 
 h2::before{
-  content: " "
+  content:" "
 }
 
 .long-copy{
@@ -76,10 +187,24 @@ h2::before{
   position: absolute;
   /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   /* Elle permet d’effectuer une translation (un déplacement) de l’élément sur les axes X et Y. /// Voir PDF */
-  width: 1140px;
+  width: auto;
+  margin: 0 auto;
+  font-family: serif;
+}
+
+.ion-social-apple {
+  font-size: 200%;
+  margin-right: 5%;
+  line-height: 0.2;
+}
+
+.ion-social-android {
+  font-size: 200%;
+  margin-right: 5%;
+  line-height: 0.2;
 }
 
 /* ------------------- BOUTON first -----------------*/
@@ -89,6 +214,7 @@ h2::before{
   border: 1px solid #fff;
   border-radius: 50px;
   font-weight: 100;
+  font-size: 120%;
 }
 
 .btn:hover {
@@ -211,7 +337,7 @@ i {
 }
 
 .iphone{
-  width: 40%;
+  width: 55%;
 }
 
 .service-mobile div{
@@ -252,7 +378,6 @@ i {
   text-transform: uppercase;
   font-size: 150%;
   margin-top: 8%;
-  margin-bottom: 0;
 }
 
 .col-boutiques {
@@ -302,4 +427,55 @@ i {
 .mail a:hover {
   text-decoration: none;
   color: rgb(255, 115, 0);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+   background-color: rgba(22, 20, 20, 0.83);
+   overflow: hidden;
+   opacity: 0.8;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+   background-color: #4CAF50;
+   color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+   display: none;
+}
+
+.titre {
+  text-decoration: none;
+  color: #000;
+}
+
+.titre:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.app-mobile {
+  margin-top: 35%;
+  text-transform: uppercase;
+  font-size: 250%;
 }
