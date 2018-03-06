@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="vendors/css/reboot.css" />
   <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
   <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
   <script src="resources/js/navbar.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
 
-  <title>Boutique Mobile</title>
+  <title>Boutique</title>
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:100,300i,400,900" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +22,7 @@
     <nav>
       <div class="row">
         <img class="logo" src="resources/img/logo.svg" alt="logo boutique">
-        <h1><a class="titre" href="index.html">sos-phone</a></h1>
+        <h1><a class="titre" href="index.html">shop</a></h1>
         <div class="topnav" id="myTopnav">
          <a href="#home" class="active">Nos Boutiques</a>
          <a href="#news">FAQ</a>
@@ -35,8 +36,8 @@
     <div class="boutique-text-box">
       <!-- première rangé -->
       <h3>Application mobile disponible</h3>
-      <a class="btn btn-ghost btn-app" href="#"><i class="ion-social-apple"></i><em class="btn-app">Iphone</em></a>
-      <a class="btn btn-ghost btn-app" href="#"><i class="ion-social-android"></i>Android</a>
+      <a class="btn btn-app" href="#"><i class="ion-social-apple"></i><em class="btn-app">Iphone</em></a>
+      <a class="btn btn-app" href="#"><i class="ion-social-android"></i>Android</a>
     </div></div>
   </header>
   <!--Les livres-->
@@ -74,22 +75,22 @@
     <ul class="range-photo">
       <li>
         <figure class="photo">
-          <img src="resources/img/1.jpg">
+          <img src="resources/img/img1.jpg">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="resources/img/2.jpg">
+          <img src="resources/img/img2.jpg">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="resources/img/3.jpg">
+          <img src="resources/img/img3.jpg">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="resources/img/4.jpg">
+          <img src="resources/img/img4.jpg">
         </figure>
       </li>
     </ul>
@@ -102,7 +103,7 @@
     <div class="row">
       <!-- image iphone-->
       <div class="col-md-6 col-mobile">
-        <img class="iphone" src="resources/img/app-iphone.png" alt="photo d'iphone">
+        <img class="iphone animated tada" src="resources/img/app-iphone.png" alt="photo d'iphone">
       </div>
       <!--Info-->
       <div class="col-md-6 col-mobile2">
@@ -161,6 +162,102 @@
               <div class="mail"><i class="ion-ios-email"></i><a class="mail" href="mailto:la-roche@contact.fr">la-roche@contact.fr</a>
         </div>
       </div>
+  </section>
+  <!-- Avis Clients -->
+  <section>
+    <div class="row">
+      <h2>Avis clients</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+          <cite><img src="resources/img/customer1.jpg">Jason</cite>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+        <cite><img src="resources/img/customer2.jpg">Sarah</cite>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+      <cite><img src="resources/img/customer3.jpg">Max</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tableau prix -->
+  <section class="prix">
+    <div class="row">
+      <h2 class="prix-titre">pack de formation web</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box-prix">
+        <div>
+          <h3>Starter</h3>
+          <p class="price">1290€/mois</p>
+          <p class="price-month">sur 3 mois de formation</p>
+        </div>
+        <div>
+          <ul>
+            <li><i class="ion-ios-checkmark-empty"></i>HTML</li>
+            <li><i class="ion-ios-checkmark-empty"></i>CSS</li>
+            <li><i class="ion-ios-close-empty icon-small"></i>Javascript</li>
+            <li><i class="ion-ios-close-empty icon-small"></i>Python</li>
+          </ul>
+        </div>
+      <div class="suscribe-box">
+        <a class="btn btn-ghost" href="#">Je m'inscris</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="box-prix">
+    <div>
+      <h3>Premium</h3>
+      <p class="price">1590€/mois</p>
+      <p class="price-month">sur 3 mois de formation</p>
+    </div>
+    <div>
+      <ul>
+        <li><i class="ion-ios-checkmark-empty"></i>HTML</li>
+        <li><i class="ion-ios-checkmark-empty"></i>CSS</li>
+        <li><i class="ion-ios-checkmark-empty"></i>Javascript</li>
+        <li><i class="ion-ios-close-empty"></i>Python</li>
+      </ul>
+    </div>
+  <div>
+    <a href="#">Je m'inscris</a>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+  <div class="box-prix">
+  <div>
+    <h3>Pro</h3>
+    <p class="price">1990€/mois</p>
+    <p class="price-month">sur 3 mois de formation</p>
+  </div>
+  <div>
+    <ul>
+      <li><i class="ion-ios-checkmark-empty"></i>HTML</li>
+      <li><i class="ion-ios-checkmark-empty"></i>CSS</li>
+      <li><i class="ion-ios-checkmark-empty"></i>Javascript</li>
+      <li><i class="ion-ios-checkmark-empty"></i>Python</li>
+    </ul>
+  </div>
+<div>
+  <a href="#">Je m'inscris</a>
+</div>
+</div>
+</div>
+</div>
   </section>
 </body>
 </html>

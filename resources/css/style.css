@@ -136,7 +136,8 @@ header {
 }
 
 section{
-  padding: 85px 0;
+  padding: 50px 0;
+  margin-right: 50px;
 }
 
 .row h1 {
@@ -175,7 +176,7 @@ h2::before{
   margin-left: 5%;
 }
 .row {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -206,7 +207,7 @@ h2::before{
 /* ------------------- BOUTON first -----------------*/
 
 .btn {
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: 1px solid #fff;
   border-radius: 50px;
   font-size: 150%;
@@ -214,14 +215,6 @@ h2::before{
 }
 
 .btn-app {
-  padding: 0 auto;
-}
-
-.btn:hover {
-  border: 3px solid black;
-}
-
-.btn-ghost {
   color: black;
   background-color: whitesmoke;
   padding-top: 0;
@@ -229,8 +222,25 @@ h2::before{
   margin-top: 10%;
 }
 
-.btn-ghost:hover {
+.btn-app:hover {
   background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  border: 3px solid rgb(255, 115, 0);
+}
+
+.btn-ghost {
+  color: #fff;
+  background-color: rgb(255, 115, 0);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 10%;
+}
+
+.btn-ghost:hover {
+  background-color: rgb(255, 115, 0);
   color: white;
 }
 
@@ -342,6 +352,7 @@ i {
 
 .iphone{
   width: 55%;
+  -moz-animation-iteration-count: 10;
 }
 
 .service-mobile div{
@@ -481,7 +492,101 @@ i {
 }
 
 .app-mobile {
-  margin-top: 35%;
+  margin-top: 25%;
   text-transform: uppercase;
   font-size: 250%;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 40px;
+  line-height: 145%;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+}
+
+cite img {
+  border-radius: 50%;
+  height: 60px;
+  margin-right: 10px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 15px;
+  display: block;
+}
+
+/*** Tableau prix ***/
+
+.prix {
+  background-color: #f4f4f4;
+}
+
+.prix-titre {
+  text-transform: uppercase;
+}
+
+.box-prix {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 20px 20px;
+}
+
+.box-prix div {
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+}
+
+.box-prix div:first-child {
+  background-color: rgba(220, 220, 220, 0.1);
+  border-top-left-radius: 10px;
+  border-top-width: 10px;
+}
+
+.box-prix div:last-child {
+  text-align: center;
+}
+
+.box-prix ul {
+  list-style: none;
+  font-size: 150%;
+  padding-left: 5%;
+}
+
+.price {
+  font-size: 300%;
+  color: rgb(255, 115, 0);
+  font-weight: 100;
+}
+
+.price span {
+  font-size: 60%;
+}
+
+.price-month {
+  font-size: 110%;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.suscribe-box {
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+
+.ion-ios-checkmark-empty {
+  font-size: 120%;
+  color: rgb(255, 115, 0);
+  margin-right: 5%;
+}
+
+.ion-ios-close-empty {
+  font-size: 120%;
+  color: rgb(255, 115, 0);
+  margin-right: 5%;
 }
