@@ -139,12 +139,8 @@ section{
   padding: 85px 0;
 }
 
-h1 {
-  text-shadow: 1px 0 0 #FFF, 0 1px 0 #FFF, 0 -1px 0 #FFF, -1px 0 0 #FFF, 1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, -1px -1px 0 #FFF;
-}
-
 .row h1 {
-  text-shadow: 1px 0 0 #FFF, 0 1px 0 #FFF, 0 -1px 0 #FFF, -1px 0 0 #FFF, 1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, -1px -1px 0 #FFF;
+  text-shadow: 3px 0 0 #FFF, 0 3px 0 #FFF, 0 -3px 0 #FFF, -3px 0 0 #FFF, 3px 3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, -3px -3px 0 #FFF;
   margin-bottom: 0;
   text-transform: uppercase;
   text-align: left;
@@ -213,8 +209,12 @@ h2::before{
   padding: 10px 30px;
   border: 1px solid #fff;
   border-radius: 50px;
-  font-weight: 100;
-  font-size: 120%;
+  font-size: 150%;
+  letter-spacing: 1px;
+}
+
+.btn-app {
+  padding: 0 auto;
 }
 
 .btn:hover {
@@ -223,6 +223,10 @@ h2::before{
 
 .btn-ghost {
   color: black;
+  background-color: whitesmoke;
+  padding-top: 0;
+  padding-bottom: 2%;
+  margin-top: 10%;
 }
 
 .btn-ghost:hover {
@@ -235,7 +239,7 @@ h2::before{
 /* ------------------- LOGO ET MENU -----------------*/
 
 .logo {
-  height: 100px;
+  height: 160px;
   float: left;
   margin-top: 20px;
 }
@@ -465,6 +469,8 @@ i {
 }
 
 .titre {
+  font-size: 250%;
+  font-family: "Bowlby One SC";
   text-decoration: none;
   color: #000;
 }
