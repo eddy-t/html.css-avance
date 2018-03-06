@@ -207,9 +207,9 @@ h2::before{
 /* ------------------- BOUTON first -----------------*/
 
 .btn {
-  padding: 10px 20px;
+  padding: 5px 15px;
   border: 1px solid #fff;
-  border-radius: 50px;
+  border-radius: 100px;
   font-size: 150%;
   letter-spacing: 1px;
 }
@@ -234,9 +234,8 @@ h2::before{
 .btn-ghost {
   color: #fff;
   background-color: rgb(255, 115, 0);
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-top: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .btn-ghost:hover {
@@ -527,7 +526,7 @@ cite {
   background-color: #f4f4f4;
 }
 
-.prix-titre {
+.sous-titre {
   text-transform: uppercase;
 }
 
@@ -562,6 +561,7 @@ cite {
   font-size: 300%;
   color: rgb(255, 115, 0);
   font-weight: 100;
+  font-family: 'Lato', sans-serif;
 }
 
 .price span {
@@ -575,8 +575,11 @@ cite {
 }
 
 .suscribe-box {
-  margin: 10px auto;
+  margin: 0 auto;
   padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+
 }
 
 .ion-ios-checkmark-empty {
@@ -589,4 +592,66 @@ cite {
   font-size: 120%;
   color: rgb(255, 115, 0);
   margin-right: 5%;
+}
+
+.col-contact {
+  text-align: center;
+}
+
+.btn-ghost div {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-form {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 5% 20%;
+}
+
+input[type=text],[type=email], select, textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=submit],[type=reset] {
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-weight: 300;
+  border-color: rgb(255, 115, 0);
+}
+
+.submit {
+  margin-left: 50%;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  font-size: 120%;
+  padding: 10px 0;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+  color: rgb(255, 115, 0);
+}
+
+.footer-social {
+  list-style: none;
+  float: right;
+  color: rgb(255, 115, 0);
+}
+
+.footer-nav li, .footer-social li {
+  display: inline-block;
 }

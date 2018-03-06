@@ -9,13 +9,12 @@
   <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
   <script src="resources/js/navbar.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
 
   <title>Boutique</title>
-  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:100,300i,400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:100,300,400" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -193,7 +192,7 @@
   <!-- Tableau prix -->
   <section class="prix">
     <div class="row">
-      <h2 class="prix-titre">pack de formation web</h2>
+      <h2 class="sous-titre">pack de formation web</h2>
     </div>
 
     <div class="row">
@@ -233,7 +232,7 @@
       </ul>
     </div>
   <div>
-    <a href="#">Je m'inscris</a>
+    <a class="btn btn-ghost" href="#">Je m'inscris</a>
   </div>
 </div>
 </div>
@@ -253,11 +252,107 @@
     </ul>
   </div>
 <div>
-  <a href="#">Je m'inscris</a>
+  <a class="btn btn-ghost" href="#">Je m'inscris</a>
 </div>
 </div>
 </div>
 </div>
   </section>
-</body>
-</html>
+  <!-- Section contact OLD **************
+  <section>
+    <div class="row">
+      <h2 class="sous-titre">vous avez des questions ? nous avons les réponses.</h2>
+    </div>
+    <div class="col-md-12 col-contact">
+      <form><div class="row">Nom<input type="text" class="name-form" value="Votre nom"></div>
+      <div class="row">Email<input type="text" class="mail-form" value="Votre email"></div>
+      <div class="row">Qui souhaitez-vous contacter ?
+        <select name="scroll-contact">
+        <option value="service-client">Service client</option>
+        <option value="sav">SAV</option>
+        <option value="prise-rdv">Demande de RDV</option>
+      </select></div>
+      <div class="row">Voulez-vous recevoir notre newsletter ?<input type="radio" name="abo-news" value="yes" checked>Oui, je m'abonne.</div>
+      <div class="row">Rédiger votre question</div><textarea class="form-text" rows=4 cols=40>Votre message.</textarea>
+      <div class="submit"><input class="btn btn-ghost" type="submit" value="Envoyer" name="submit">
+      </div>
+    </div>
+      </form>
+  </section>
+Fin code contact form *******-->
+<section>
+  <div class="row">
+    <h2 class="sous-titre">vous avez des questions ? nous avons les réponses.</h2>
+  </div>
+  <div class="row">
+    <form method="post" action="#" class="contact-form">
+      <div class="row">
+        <div class="col-md-4">
+          <label for="name">Nom</label>
+        </div>
+          <div class="col-md-8">
+            <input type="text" id="name" placeholder="Votre nom" required>
+          </div>
+            <div class="col-md-4">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="email" placeholder="Votre email" required>
+            </div>
+          </div>
+      <div class="row">
+          <div class="col-md-4">
+            <label for="destinataire">Quels services souhaitez-vous contacter ?</label>
+          </div>
+          <div class="col-md-8">
+            <select id="destinataire-select">
+              <option value="" selected>Selectionner un service</option>
+              <option value="client">Service clients</option>
+              <option value="facture">Service facture</option>
+              <option value="sav">Service SAV</option>
+              <option value="technique">Service technique</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label>Voulez-vous recevoir notre newsletter ?</label>
+          </div>
+          <div class="col-md-8">
+            <input type="checkbox" id="newsletter" checked>Oui, je m'abonne.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label>Rédiger votre question</label>
+          </div>
+          <div class="col-md-8"><textarea required rows=4 cols=40 placeholder="Votre message..."></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="submit">
+            <input type="submit" value="Envoyer">
+            <input type="reset">
+          </div>
+        </div>
+      </form>
+      </div>
+      </section>
+      <footer>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="footer-nav">
+              <li>CGV</li>
+              <li>Mentions légales</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-social">
+              <li>Facebook</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>
