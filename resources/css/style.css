@@ -1,4 +1,10 @@
 /* ------------------- GENERAL -----------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 480px) {
  .topnav a:not(:first-child) {display: none;}
  .topnav a.icon {
@@ -223,7 +229,6 @@ header {
 
 section{
   padding: 50px 0;
-  margin-right: 50px;
 }
 
 .row h1 {
