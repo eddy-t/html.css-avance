@@ -111,6 +111,92 @@
  }
 }
 
+/*------------------------------
+    02. START PRELOADER STYLE
+------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-image: -moz-linear-gradient( -29deg, rgb(255, 115, 0) 0%, rgb(255, 255, 255) 100%);
+    background-image: -webkit-linear-gradient( -29deg, rgb(255, 115, 0) 0%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient( -29deg, rgb(255, 115, 0) 0%, rgb(255, 255, 255) 100%);
+}
+
+.preloader .spinner {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.preloader .spinner .cube1,
+.preloader .spinner .cube2 {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.preloader .spinner .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+    25% {
+        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5)
+    }
+    50% {
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg)
+    }
+    75% {
+        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5)
+    }
+    100% {
+        -webkit-transform: rotate(-360deg)
+    }
+}
+
+@keyframes sk-cubemove {
+    25% {
+        transform: translateX(42px) rotate(-90deg) scale(0.5);
+        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+        transform: translateX(42px) translateY(42px) rotate(-179deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    }
+    50.1% {
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+
+/*------------------------------
+    - End Preloader Style
+------------------------------*/
+
 html {
   background: #fff;
   /* couleur de fond */
@@ -127,7 +213,7 @@ html {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 232, 255, 1), rgba(0, 255, 255, 0.65)), url("../../resources/img/back.png");
+  background-image: linear-gradient(rgba(255, 115, 0, 1), rgba(255, 115, 0, 0.6)), url("../../resources/img/back.png");
   /* Ajout background et filtre */
   background-size: cover;
   background-position:top;
@@ -655,3 +741,31 @@ footer {
 .footer-nav li, .footer-social li {
   display: inline-block;
 }
+
+/*---------------------------
+      .COUNTUP SECTION
+----------------------------*/
+
+#countup {
+    position: relative;
+}
+
+#countup .countup-box {
+    margin-bottom: 30px;
+}
+
+#countup .countup-box .count-num {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#countup .countup-box .count-name {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*---------------------------
+      END COUNTUP SECTION
+---------------------------*/

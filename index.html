@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- CSS Section -->
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- BootStrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link href="resources/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link href="resources/css/animate.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="resources/css/aos.css" rel="stylesheet">
+  <!-- Lity CSS -->
+  <link href="resources/css/lity.min.css" rel="stylesheet">
+  <!-- Ionicons CSS -->
   <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- My CSS -->
   <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Favicon -->
   <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
+
+  <!-- Javascript Section -->
+  <!-- JQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="resources/js/jquery.counterup.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap JS -->
+  <script src="resources/js/bootstrap.min.js"></script>
+  <!-- <script src="resources/js/waypoints.min.js"></script> -->
+  <!-- AOS Script -->
+  <script src="resources/js/aos.js"></script>
+  <!-- Navbar js -->
   <script src="resources/js/navbar.js"></script>
+  <!-- Main JS -->
+  <script src="resources/js/main.js"></script>
+  <!-- END Javascript Section -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-
   <title>Boutique</title>
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:100,300,400" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Start Preloader -->
+  <div class="preloader">
+      <div class="spinner">
+          <div class="cube1"></div>
+          <div class="cube2"></div>
+      </div>
+  </div>
+  <!-- End Preloader -->
+
   <header>
     <nav>
       <div class="row">
         <img class="logo" src="resources/img/logo.svg" alt="logo boutique">
         <h1><a class="titre" href="index.html">shop</a></h1>
         <div class="topnav" id="myTopnav">
-         <a href="#home" class="active">Nos Boutiques</a>
+         <a href="#home">Nos Boutiques</a>
          <a href="#news">FAQ</a>
          <a href="#contact">Contact</a>
          <a href="#about">Comment Commander ?</a>
@@ -188,6 +224,51 @@
       </div>
     </div>
   </section>
+
+  <!-- Start Countup Section -->
+  <section id="countup" class="padding-100" style="background-image: url('http://via.placeholder.com/1920x1280'); background-size: cover; background-position: 50% 50%;background-attachment: fixed;">
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 section-heade white text-center">
+                  <h3>statistics</h3>
+                  <div class="space-25"></div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      <br>sed do eiusmod tempor incididunt ut labore.</p>
+                  <div class="space-50"></div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="countup-box" data-aos="fade-zoom-in">
+                      <img src="resources/img/icon-10.png" class="img-responsive center-block" alt="">
+                      <div class="count-num"><span>16</span>K</div>
+                      <div class="count-name">Download</div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="countup-box" data-aos="fade-zoom-in">
+                      <img src="resources/img/icon-11.png" class="img-responsive center-block" alt="">
+                      <div class="count-num"><span>2500</span></div>
+                      <div class="count-name">Line code</div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="countup-box" data-aos="fade-zoom-in">
+                      <img src="resources/img/icon-12.png" class="img-responsive center-block" alt="">
+                      <div class="count-num"><span>255</span></div>
+                      <div class="count-name">coffee cups</div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="countup-box" data-aos="fade-zoom-in">
+                      <img src="resources/img/icon-13.png" class="img-responsive center-block" alt="">
+                      <div class="count-num"><span>1500</span></div>
+                      <div class="count-name">shere</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- End Countup Section -->
 
   <!-- Tableau prix -->
   <section class="prix">
