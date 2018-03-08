@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- CSS Section -->
   <!-- BootStrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,27 +20,11 @@
   <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
   <!-- My CSS -->
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
 
-  <!-- Javascript Section -->
-  <!-- JQuery JS -->
-  <script src="resources/js/jquery.min.js"></script>
-  <script src="resources/js/jquery.counterup.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!-- Bootstrap JS -->
-  <script src="resources/js/bootstrap.min.js"></script>
-  <script src="resources/js/waypoints.min.js"></script>
-  <!-- AOS Script -->
-  <script src="resources/js/aos.js"></script>
-  <!-- Navbar js -->
-  <script src="resources/js/navbar.js"></script>
-  <!-- Main JS -->
-  <script src="resources/js/main.js"></script>
-  <!-- END Javascript Section -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Boutique</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:100,300,400" rel="stylesheet">
@@ -56,13 +43,16 @@
   <header>
     <nav>
       <div class="row">
-        <img class="logo" src="resources/img/logo.svg" alt="logo boutique">
+        <img class="logo" src="resources/img/logo.png" alt="logo boutique">
+        <img class="logo-black" src="resources/img/logo-black.png" alt="logo boutique">
         <h1><a class="titre" href="index.html">shop</a></h1>
         <div class="topnav" id="myTopnav">
-         <a href="#home">Nos Boutiques</a>
-         <a href="#news">FAQ</a>
-         <a href="#contact">Contact</a>
-         <a href="#about">Comment Commander ?</a>
+         <a class="js-scroll-about" href="#">À Propos</a>
+         <a class="js-scroll-mobile" href="#">Mobile</a>
+         <a class="js-scroll-villes" href="#">Adresses</a>
+         <a class="js-scroll-avis" href="#">Avis</a>
+         <a class="js-scroll-forfait" href="#">Forfaits</a>
+         <a class="js-scroll-contact" href="#">Contact</a>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
        </div>
       </div>
@@ -75,8 +65,7 @@
       <a class="btn btn-app" href="#"><i class="ion-social-android"></i>Android</a>
     </div></div>
   </header>
-  <!--Les livres-->
-  <section>
+  <section class="js-section-about js--waypoint-infos">
     <div class="row">
       <h2>Lorem Ipsum</h2>
       <p class="long-copy">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux
@@ -131,7 +120,7 @@
     </ul>
   </section>
 <!-- Mobile -->
-  <section>
+  <section class="js-section-mobile">
     <div class="row">
       <h2 class="app-mobile">Boutique disponible sur mobile</h2>
     </div>
@@ -159,7 +148,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="js-section-villes">
     <div class="row">
       <h2 class="titre-centre">nos boutiques</h2>
     </div>
@@ -199,7 +188,7 @@
       </div>
   </section>
   <!-- Avis Clients -->
-  <section>
+  <section class="js-section-avis">
     <div class="row">
       <h2>Avis clients</h2>
     </div>
@@ -226,7 +215,7 @@
   </section>
 
   <!-- Start Countup Section -->
-  <section id="countup" class="padding-100" style="background-image: url('http://via.placeholder.com/1920x1280'); background-size: cover; background-position: 50% 50%;background-attachment: fixed;">
+  <section id="countup" class="padding-100">
       <div class="overlay"></div>
       <div class="container">
           <div class="row">
@@ -238,31 +227,27 @@
                   <div class="space-50"></div>
               </div>
               <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box" data-aos="fade-zoom-in">
-                      <img src="resources/img/icon-10.png" class="img-responsive center-block" alt="">
-                      <div class="count-num"><span>16</span>K</div>
-                      <div class="count-name">Download</div>
+                  <div class="countup-box ion-earth" data-aos="fade-zoom-in">
+                      <div class="count-num"><span>50</span>K</div>
+                      <div class="count-name">Clients</div>
                   </div>
               </div>
               <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box" data-aos="fade-zoom-in">
-                      <img src="resources/img/icon-11.png" class="img-responsive center-block" alt="">
+                  <div class="countup-box ion-ios-cart" data-aos="fade-zoom-in">
                       <div class="count-num"><span>2500</span></div>
-                      <div class="count-name">Line code</div>
+                      <div class="count-name">Ventes/J</div>
                   </div>
               </div>
               <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box" data-aos="fade-zoom-in">
-                      <img src="resources/img/icon-12.png" class="img-responsive center-block" alt="">
-                      <div class="count-num"><span>255</span></div>
-                      <div class="count-name">coffee cups</div>
+                  <div class="countup-box ion-ios-people" data-aos="fade-zoom-in">
+                      <div class="count-num"><span>150</span></div>
+                      <div class="count-name">Partenaires</div>
                   </div>
               </div>
               <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box" data-aos="fade-zoom-in">
-                      <img src="resources/img/icon-13.png" class="img-responsive center-block" alt="">
-                      <div class="count-num"><span>1500</span></div>
-                      <div class="count-name">shere</div>
+                  <div class="countup-box ion-ios-time" data-aos="fade-zoom-in">
+                      <div class="count-num">+<span>5</span>ans</div>
+                      <div class="count-name">D'expérience</div>
                   </div>
               </div>
           </div>
@@ -271,7 +256,7 @@
   <!-- End Countup Section -->
 
   <!-- Tableau prix -->
-  <section class="prix">
+  <section class="prix js-section-forfait">
     <div class="row">
       <h2 class="sous-titre">pack de formation web</h2>
     </div>
@@ -361,7 +346,7 @@
       </form>
   </section>
 Fin code contact form *******-->
-<section>
+<section class="js-section-contact">
   <div class="row">
     <h2 class="sous-titre">vous avez des questions ? nous avons les réponses.</h2>
   </div>
@@ -429,11 +414,32 @@ Fin code contact form *******-->
           </div>
           <div class="col-md-6">
             <ul class="footer-social">
-              <li>Facebook</li>
-              <li>Twitter</li>
+              <i class="ion-social-facebook"></i><li>Facebook</li>
+              <i class="ion-social-twitter"></i><li>Twitter</li>
             </ul>
           </div>
         </div>
       </footer>
+      <!-- Javascript Section -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="resources/js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- Bootstrap JS -->
+      <script src="resources/js/bootstrap.min.js"></script>
+      <!-- Owl Carousel JS -->
+      <script src="resources/js/owl.carousel.min.js"></script>
+      <!-- Counterup JS -->
+      <script src="resources/js/waypoints.min.js"></script>
+      <script src="resources/js/jquery.waypoints.min.js"></script>
+      <script src="resources/js/jquery.counterup.js"></script>
+      <!-- AOS JS -->
+      <script src="resources/js/aos.js"></script>
+      <!-- lity JS -->
+      <script src="resources/js/lity.min.js"></script>
+      <!-- Our Main JS -->
+      <script src="resources/js/main.js"></script>
+      <!-- My JS -->
+      <script src="resources/js/script.js"></script>
+      <!-- END Javascript Section -->
     </body>
     </html>

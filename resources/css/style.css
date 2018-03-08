@@ -283,17 +283,77 @@ h2::before{
   font-family: serif;
 }
 
-.ion-social-apple {
+/*----------------------------------------------------
+                    ICONS SECTION
+-----------------------------------------------------*/
+
+.ion-ios-email {
+  font-size: 150%;
+  color: rgb(255, 115, 0);
+  margin-left: 3%;
+  padding-top: 15%;
+  padding-right: 5%;
+}
+
+.ion-ios-telephone {
+  font-size: 130%;
+  color: rgb(255, 115, 0);
+  margin-left: 3%;
+  padding-top: 15%;
+  padding-right: 7%;
+}
+
+.ion-ios-location {
+  font-size: 130%;
+  padding-top: 10%;
+  padding-right: 9%;
+  color: rgb(255, 115, 0);
+}
+
+.ion-android-star {
+  font-size: 45px;
+  color: orange;
+}
+
+.ion-ios-pulse-strong {
+  font-size: 45px;
+  color: brown;
+}
+
+.ion-ios-heart {
+  font-size: 45px;
+  color: red;
+}
+
+.ion-ios-cog {
+  font-size: 45px;
+  color: black;
+}
+
+.ion-social-apple, .ion-social-android {
   font-size: 200%;
   margin-right: 5%;
   line-height: 0.2;
 }
 
-.ion-social-android {
-  font-size: 200%;
-  margin-right: 5%;
-  line-height: 0.2;
+.ion-ios-people, .ion-earth, .ion-ios-cart, .ion-ios-time {
+  font-size: 120px;
 }
+
+.ion-social-facebook, .ion-social-twitter {
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.ion-ios-checkmark-empty, .ion-ios-close-empty {
+  font-size: 120%;
+  color: rgb(255, 115, 0);
+  margin-right: 5%;
+}
+
+/*----------------------------------------------------
+                    ICONS SECTION END
+-----------------------------------------------------*/
 
 /* ------------------- BOUTON first -----------------*/
 
@@ -339,63 +399,39 @@ h2::before{
 /* ------------------- LOGO ET MENU -----------------*/
 
 .logo {
-  height: 160px;
+  height: 80px;
   float: left;
   margin-top: 20px;
 }
 
-.main-nav {
-  list-style: none;
-  float: right;
-  margin-top: 0;
+.logo-black {
+  height: 80px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
 }
+.logo-black { display: none;}
 
-.main-nav li {
-  display: inline-block;
-  margin-left: 40px;
-  text-transform: uppercase;
-}
+.sticky .logo { display: none;}
 
-.main-nav li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 120%;
-}
+.sticky .logo-black { display: block;}
 
-.main-nav li a:hover {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 130%;
-  transition: font-size 1s;
-}
-
-.ion-android-star {
-  font-size: 45px;
-  color: orange;
-}
-
-.ion-ios-pulse-strong {
-  font-size: 45px;
-  color: brown;
-}
-
-.ion-ios-heart {
-  font-size: 45px;
-  color: red;
-}
-
-.ion-ios-cog {
-  font-size: 45px;
-  color: black;
+.sticky {
+  z-index: 9998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: linear-gradient(rgba(255, 115, 0, 1), rgba(255, 115, 0, 0.6));
 }
 
 .deco{
   text-align: center;
 }
 .range-photo {
-  margin: 0 auto;
   list-style: none;
   width: 100%;
+  margin: 0 auto;
 }
 .range-photo li{
   display: block;
@@ -422,7 +458,16 @@ h2::before{
 i {
   text-align: center;
 }
-/*--------Mobile-------*/
+
+.btn-ghost div {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/*---------------------------------------
+              MOBILE SECTION
+----------------------------------------*/
+
 .col-mobile{
   margin-top: 30px;
 }
@@ -461,17 +506,29 @@ i {
   margin-bottom: 50px;
 }
 
+.app-mobile {
+  margin-top: 25%;
+  text-transform: uppercase;
+  font-size: 250%;
+}
+
+/*---------------------------------------
+            END MOBILE SECTION
+----------------------------------------*/
+
+/*---------------------------------------
+            ADRESSES SECTION
+----------------------------------------*/
+
 .btn-a img{
   height: 50px;
   width: auto;
   margin-right: 20px;
 }
 
-
 .img-centre {
   width: 88%;
 }
-
 
 .titre-centre {
   text-transform: uppercase;
@@ -490,37 +547,14 @@ i {
   font-family: sans-serif;
 }
 
-.ion-ios-location {
-  font-size: 130%;
-  padding-top: 10%;
-  padding-right: 9%;
-  color: rgb(255, 115, 0);
-}
-
 .adresse {
   font-size: 120%;
   margin-left: 3%;
   padding-top: 5%;
 }
 
-.ion-ios-telephone {
-  font-size: 130%;
-  color: rgb(255, 115, 0);
-  margin-left: 3%;
-  padding-top: 15%;
-  padding-right: 7%;
-}
-
 .phone {
   font-size: 120%;
-}
-
-.ion-ios-email {
-  font-size: 150%;
-  color: rgb(255, 115, 0);
-  margin-left: 3%;
-  padding-top: 15%;
-  padding-right: 5%;
 }
 
 .mail {
@@ -534,11 +568,36 @@ i {
   color: rgb(255, 115, 0);
 }
 
-/* Add a black background color to the top navigation */
+/*---------------------------------------
+          END ADRESSES SECTION
+----------------------------------------*/
+
+/*---------------------------------------
+            TOPNAV & TITRE SECTION
+----------------------------------------*/
+
 .topnav {
    background-color: rgba(22, 20, 20, 0.83);
    overflow: hidden;
    opacity: 0.8;
+}
+
+.topnav-left {
+  z-index: 9998;
+  float: left;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 35%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.tonav-left a {
+  text-align: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -581,11 +640,13 @@ i {
   color: #000;
 }
 
-.app-mobile {
-  margin-top: 25%;
-  text-transform: uppercase;
-  font-size: 250%;
-}
+/*---------------------------------------
+        END TOPNAV & TITRE SECTION
+----------------------------------------*/
+
+/*---------------------------------------
+              AVIS SECTION
+----------------------------------------*/
 
 blockquote {
   font-style: italic;
@@ -611,7 +672,13 @@ cite {
   display: block;
 }
 
-/*** Tableau prix ***/
+/*---------------------------------------
+            AVIS SECTION
+----------------------------------------*/
+
+/*------------------------------------
+      FORMATION & PRIX SECTION
+-------------------------------------*/
 
 .prix {
   background-color: #f4f4f4;
@@ -673,25 +740,16 @@ cite {
 
 }
 
-.ion-ios-checkmark-empty {
-  font-size: 120%;
-  color: rgb(255, 115, 0);
-  margin-right: 5%;
-}
+/*------------------------------------
+      END FORMATION & PRIX SECTION
+-------------------------------------*/
 
-.ion-ios-close-empty {
-  font-size: 120%;
-  color: rgb(255, 115, 0);
-  margin-right: 5%;
-}
+/*------------------------------------
+          CONTACT SECTION
+-------------------------------------*/
 
 .col-contact {
   text-align: center;
-}
-
-.btn-ghost div {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
 }
 
 .contact-form {
@@ -725,27 +783,9 @@ input[type=submit],[type=reset] {
   padding-top: 10px;
 }
 
-footer {
-  background-color: #333;
-  font-size: 120%;
-  padding: 10px 0;
-}
-
-.footer-nav {
-  list-style: none;
-  float: left;
-  color: rgb(255, 115, 0);
-}
-
-.footer-social {
-  list-style: none;
-  float: right;
-  color: rgb(255, 115, 0);
-}
-
-.footer-nav li, .footer-social li {
-  display: inline-block;
-}
+/*------------------------------------
+          END CONTACT SECTION
+-------------------------------------*/
 
 /*---------------------------
       .COUNTUP SECTION
@@ -762,15 +802,72 @@ footer {
 #countup .countup-box .count-num {
     font-size: 50px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 
 #countup .countup-box .count-name {
     font-size: 20px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
 
 /*---------------------------
       END COUNTUP SECTION
 ---------------------------*/
+
+/*---------------------------
+      START SLIDE SECTION
+----------------------------*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: -moz-linear-gradient( -29deg, rgb(255, 115, 0) 0%, rgb(255, 255, 255) 100%);
+    background-image: -webkit-linear-gradient( -29deg, rgb(255, 115, 0) 0%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient( -29deg, rgb(255, 115, 0) 0%, rgb(255, 255, 255) 100%);
+    opacity: 0.9;
+}
+
+/*-----------------------------
+        END SLIDE SECTION
+------------------------------*/
+
+/*-----------------------------
+        FOOTER SECTION
+------------------------------*/
+
+footer {
+  background-color: #333;
+  font-size: 120%;
+  padding: 10px 0;
+}
+
+.footer-social {
+  list-style: none;
+  float: right;
+  color: rgb(255, 115, 0);
+}
+
+.footer-social li {
+  padding-bottom: 10px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+  color: rgb(255, 115, 0);
+  padding-top: 15px;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+/*-----------------------------
+        END FOOTER SECTION
+------------------------------*/
