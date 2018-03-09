@@ -26,6 +26,18 @@
  .btn {
    margin-left: 15%;
  }
+
+ .g-recaptcha {
+   margin-right: 5%;
+   margin-top: 20px;
+ }
+
+ .titre {
+   font-size: 15px;
+   font-family: "Bowlby One SC";
+   text-decoration: none;
+   color: #000;
+ }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -869,7 +881,7 @@ footer {
 }
 
 .g-recaptcha {
-  margin-left: 300px;
+  margin-left: 10%;
   margin-top: 20px;
 }
 
