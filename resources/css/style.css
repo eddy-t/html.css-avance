@@ -868,6 +868,10 @@ footer {
   margin-left: 30%;
 }
 
+.g-recaptcha {
+  margin-left: 300px;
+  margin-top: 20px;
+}
 
 /*-----------------------------
         END FOOTER SECTION
