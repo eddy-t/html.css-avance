@@ -25,7 +25,7 @@
   <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
 
-  <title>Boutique</title>
+  <title>Formation</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:100,300,400" rel="stylesheet">
 </head>
@@ -39,13 +39,11 @@
       </div>
   </div>
   <!-- End Preloader -->
-
   <header>
     <nav>
       <div class="row">
-        <img class="logo" src="resources/img/logo.png" alt="logo boutique">
-        <img class="logo-black" src="resources/img/logo-black.png" alt="logo boutique">
-        <h1><a class="titre" href="index.html">shop</a></h1>
+          <img class="logo" src="resources/img/logo.svg" alt="logo boutique">
+        <h1><a class="titre" href="index.html">FORMATION</a></h1>
         <div class="topnav" id="myTopnav">
          <a class="js-scroll-about" href="#">À Propos</a>
          <a class="js-scroll-mobile" href="#">Mobile</a>
@@ -57,22 +55,56 @@
        </div>
       </div>
     </nav>
-    <div class="row">
-    <div class="boutique-text-box">
-      <!-- première rangé -->
-      <h3>Application mobile disponible</h3>
-      <a class="btn btn-app" href="#"><i class="ion-social-apple"></i><em class="btn-app">Iphone</em></a>
-      <a class="btn btn-app" href="#"><i class="ion-social-android"></i>Android</a>
-    </div></div>
   </header>
   <section class="js-section-about js--waypoint-infos">
     <div class="row">
-      <h2>Lorem Ipsum</h2>
+      <h2>À Propos</h2>
       <p class="long-copy">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux
         de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce
         à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-      <h2>Lorem Ipsum</h2>
+      <h2>Statistiques</h2>
     </div>
+    <!-- Start Countup Section -->
+    <section id="countup" class="padding-100">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heade white text-center">
+                    <h3>Quelques chiffres</h3>
+                    <div class="space-25"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        <br>sed do eiusmod tempor incididunt ut labore.</p>
+                    <div class="space-50"></div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="countup-box ion-earth" data-aos="fade-zoom-in">
+                        <div class="count-num"><span>50</span>K</div>
+                        <div class="count-name">Clients</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="countup-box ion-ios-cart" data-aos="fade-zoom-in">
+                        <div class="count-num"><span>2500</span></div>
+                        <div class="count-name">Ventes/J</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="countup-box ion-ios-people" data-aos="fade-zoom-in">
+                        <div class="count-num"><span>150</span></div>
+                        <div class="count-name">Partenaires</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="countup-box ion-ios-time" data-aos="fade-zoom-in">
+                        <div class="count-num">+<span>5</span>ans</div>
+                        <div class="count-name">D'expérience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Countup Section -->
+    <!-- Description Section -->
     <div class="row">
       <div class="col-md-3">
         <i class="ion-android-star deco"></i>
@@ -95,29 +127,32 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
   </section>
+  <!-- Photos presentation -->
   <section>
+    <div data-aos="flip-right" data-aos-once="false">
     <ul class="range-photo">
       <li>
         <figure class="photo">
-          <img src="resources/img/img1.jpg">
+          <a href="resources/img/img1.jpg" data-lity><img src="resources/img/img1.jpg"></a>
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="resources/img/img2.jpg">
+          <a href="resources/img/img2.jpg" data-lity><img src="resources/img/img2.jpg"></a>
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="resources/img/img3.jpg">
+          <a href="resources/img/img3.jpg" data-lity><img src="resources/img/img3.jpg"></a>
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="resources/img/img4.jpg">
+          <a href="resources/img/img4.jpg" data-lity><img src="resources/img/img4.jpg"></a>
         </figure>
       </li>
     </ul>
+  </div>
   </section>
 <!-- Mobile -->
   <section class="js-section-mobile">
@@ -126,11 +161,11 @@
     </div>
     <div class="row">
       <!-- image iphone-->
-      <div class="col-md-6 col-mobile">
-        <img class="iphone animated tada" src="resources/img/app-iphone.png" alt="photo d'iphone">
+      <div data-aos="flip-left" data-aos-once="false" class="col-md-6 col-mobile">
+        <img id="iphone" src="resources/img/app-iphone.png" alt="photo d'iphone">
       </div>
       <!--Info-->
-      <div class="col-md-6 col-mobile2">
+      <div data-aos="flip-right" data-aos-once="false" class="col-md-6 col-mobile2">
         <div class="service-mobile">
           <div>1</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -152,7 +187,7 @@
     <div class="row">
       <h2 class="titre-centre">nos boutiques</h2>
     </div>
-      <div class="row">
+      <div data-aos="flip-right" data-aos-once="false" class="row">
         <div class="col-md-3 col-boutiques">
           <div class="centre-list">
           <img class="img-centre" src="resources/img/nantes.jpg" alt="nantes">
@@ -193,19 +228,19 @@
       <h2>Avis clients</h2>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div data-aos="fade-down-right" data-aos-once="false" class="col-md-4">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
           <cite><img src="resources/img/customer1.jpg">Jason</cite>
         </blockquote>
       </div>
-      <div class="col-md-4">
+      <div data-aos="fade-down" data-aos-once="false" class="col-md-4">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
         <cite><img src="resources/img/customer2.jpg">Sarah</cite>
         </blockquote>
       </div>
-      <div class="col-md-4">
+      <div data-aos="fade-down-left" data-aos-once="false" class="col-md-4">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
       <cite><img src="resources/img/customer3.jpg">Max</cite>
@@ -213,56 +248,14 @@
       </div>
     </div>
   </section>
-
-  <!-- Start Countup Section -->
-  <section id="countup" class="padding-100">
-      <div class="overlay"></div>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12 section-heade white text-center">
-                  <h3>statistics</h3>
-                  <div class="space-25"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      <br>sed do eiusmod tempor incididunt ut labore.</p>
-                  <div class="space-50"></div>
-              </div>
-              <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box ion-earth" data-aos="fade-zoom-in">
-                      <div class="count-num"><span>50</span>K</div>
-                      <div class="count-name">Clients</div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box ion-ios-cart" data-aos="fade-zoom-in">
-                      <div class="count-num"><span>2500</span></div>
-                      <div class="count-name">Ventes/J</div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box ion-ios-people" data-aos="fade-zoom-in">
-                      <div class="count-num"><span>150</span></div>
-                      <div class="count-name">Partenaires</div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6 text-center">
-                  <div class="countup-box ion-ios-time" data-aos="fade-zoom-in">
-                      <div class="count-num">+<span>5</span>ans</div>
-                      <div class="count-name">D'expérience</div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- End Countup Section -->
-
   <!-- Tableau prix -->
   <section class="prix js-section-forfait">
     <div class="row">
-      <h2 class="sous-titre">pack de formation web</h2>
+      <h2 class="sous-titre">pack de formation informatique/web</h2>
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div data-aos="fade-right" data-aos-once="false" class="col-md-4">
         <div class="box-prix">
         <div>
           <h3>Starter</h3>
@@ -282,7 +275,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-4">
+  <div data-aos="fade-down" data-aos-once="false" class="col-md-4">
     <div class="box-prix">
     <div>
       <h3>Premium</h3>
@@ -302,7 +295,7 @@
   </div>
 </div>
 </div>
-<div class="col-md-4">
+<div data-aos="fade-left" data-aos-once="false" class="col-md-4">
   <div class="box-prix">
   <div>
     <h3>Pro</h3>
@@ -324,28 +317,6 @@
 </div>
 </div>
   </section>
-  <!-- Section contact OLD **************
-  <section>
-    <div class="row">
-      <h2 class="sous-titre">vous avez des questions ? nous avons les réponses.</h2>
-    </div>
-    <div class="col-md-12 col-contact">
-      <form><div class="row">Nom<input type="text" class="name-form" value="Votre nom"></div>
-      <div class="row">Email<input type="text" class="mail-form" value="Votre email"></div>
-      <div class="row">Qui souhaitez-vous contacter ?
-        <select name="scroll-contact">
-        <option value="service-client">Service client</option>
-        <option value="sav">SAV</option>
-        <option value="prise-rdv">Demande de RDV</option>
-      </select></div>
-      <div class="row">Voulez-vous recevoir notre newsletter ?<input type="radio" name="abo-news" value="yes" checked>Oui, je m'abonne.</div>
-      <div class="row">Rédiger votre question</div><textarea class="form-text" rows=4 cols=40>Votre message.</textarea>
-      <div class="submit"><input class="btn btn-ghost" type="submit" value="Envoyer" name="submit">
-      </div>
-    </div>
-      </form>
-  </section>
-Fin code contact form *******-->
 <section class="js-section-contact">
   <div class="row">
     <h2 class="sous-titre">vous avez des questions ? nous avons les réponses.</h2>
@@ -406,24 +377,25 @@ Fin code contact form *******-->
       </section>
       <footer>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-3">
             <ul class="footer-nav">
-              <li>CGV</li>
-              <li>Mentions légales</li>
+              <a href="#"><li>CGV</li></a>
+              <a href="#"><li>Mentions légales</li></a>
             </ul>
           </div>
           <div class="col-md-6">
+            <a href="#"><h3 class="btn btn-app" id="footpage">Haut de Page</h2></a>
+          </div>
+          <div class="col-md-3">
             <ul class="footer-social">
-              <i class="ion-social-facebook"></i><li>Facebook</li>
-              <i class="ion-social-twitter"></i><li>Twitter</li>
+              <a href="#"><i class="ion-social-facebook"></i><li>Facebook</li></a>
+              <a href="#"><i class="ion-social-twitter"></i><li>Twitter</li></a>
             </ul>
           </div>
         </div>
       </footer>
       <!-- Javascript Section -->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="resources/js/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
       <!-- Bootstrap JS -->
       <script src="resources/js/bootstrap.min.js"></script>
       <!-- Owl Carousel JS -->
@@ -436,6 +408,8 @@ Fin code contact form *******-->
       <script src="resources/js/aos.js"></script>
       <!-- lity JS -->
       <script src="resources/js/lity.min.js"></script>
+      <!-- Navbar JS -->
+      <script src="resources/js/navbar.js"></script>
       <!-- Our Main JS -->
       <script src="resources/js/main.js"></script>
       <!-- My JS -->

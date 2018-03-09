@@ -5,15 +5,26 @@
   padding: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 200px) and (max-width: 640px) {
  .topnav a:not(:first-child) {display: none;}
  .topnav a.icon {
    float: right;
    display: block;
  }
- .iphone {
+
+ #iphone {
    margin-right: 22%;
    width: auto;
+   -moz-animation-duration: 4s;
+ }
+ .boutique-text-box {
+   display: inline-block;
+   margin: 0 auto;
+   padding-top: 60%;
+   padding-left: 20%;
+ }
+ .btn {
+   margin-left: 15%;
  }
 }
 
@@ -24,31 +35,25 @@
    float: right;
    display: block;
  }
- .iphone {
-   margin-right: 22%;
+ .btn-a:last-child img {
+   height: 60px;
    width: auto;
- }
-}
-
-@media screen and (max-width: 480px) {
- .iphone {
-   margin-right: 22%;
-   width: auto;
- }
- .boutique-text-box {
-   display: inline-block;
-   margin: 0 auto;
-   padding-top: 60%;
+   margin-right: 20px;
    padding-left: 20%;
  }
- .btn {
-   margin-left: 15%;
-   margin-bottom: 10%;
+
+ .btn-a img {
+   height: 50px;
+   width: auto;
+   margin-right: 20px;
+   padding-left: 20%;
+
  }
 }
 
-@media screen and (max-width: 600px) {
- .iphone {
+@media screen and (min-width: 600px) {
+
+ #iphone {
    margin-right: 22%;
    width: auto;
  }
@@ -65,10 +70,7 @@
 }
 
 @media screen and (max-width: 720px) {
- .iphone {
-   margin-right: 22%;
-   width: auto;
- }
+
  .boutique-text-box {
    display: inline-block;
    margin: 0 auto;
@@ -81,27 +83,6 @@
  }
 }
 
-@media screen and (max-width: 840px) {
- .iphone {
-   margin-right: 22%;
-   width: auto;
- }
-}
-
-@media screen and (max-width: 960px) {
- .iphone {
-   margin-right: 22%;
-   width: auto;
- }
-}
-
-@media screen and (max-width: 1080px) {
- .iphone {
-   margin-right: 22%;
-   width: auto;
- }
-}
-
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
  .topnav.responsive {position: relative;}
@@ -109,11 +90,14 @@
    position: absolute;
    right: 0;
    top: 0;
+
  }
  .topnav.responsive a {
    float: none;
    display: block;
    text-align: left;
+   background-color: whitesmoke;
+   color: #000;
  }
 }
 
@@ -224,7 +208,7 @@ header {
   background-size: cover;
   background-position:top;
   background-attachment: scroll, local;
-  height: 100vh;
+  height: 250px;
 }
 
 section{
@@ -343,8 +327,14 @@ h2::before{
 .ion-social-facebook, .ion-social-twitter {
   font-size: 35px;
   padding-right: 10px;
+  color: #3b5998;
 }
 
+.ion-social-twitter {
+  font-size: 35px;
+  padding-right: 10px;
+  color: #55acee;
+}
 .ion-ios-checkmark-empty, .ion-ios-close-empty {
   font-size: 120%;
   color: rgb(255, 115, 0);
@@ -358,19 +348,14 @@ h2::before{
 /* ------------------- BOUTON first -----------------*/
 
 .btn {
-  padding: 5px 15px;
-  border: 1px solid #fff;
   border-radius: 100px;
   font-size: 150%;
   letter-spacing: 1px;
 }
 
 .btn-app {
-  color: black;
   background-color: whitesmoke;
-  padding-top: 0;
-  padding-bottom: 2%;
-  margin-top: 10%;
+  border: 2px solid #000;
 }
 
 .btn-app:hover {
@@ -399,22 +384,12 @@ h2::before{
 /* ------------------- LOGO ET MENU -----------------*/
 
 .logo {
-  height: 80px;
+  height: 200px;
   float: left;
   margin-top: 20px;
 }
-
-.logo-black {
-  height: 80px;
-  width: auto;
-  float: left;
-  margin-top: 20px;
-}
-.logo-black { display: none;}
 
 .sticky .logo { display: none;}
-
-.sticky .logo-black { display: block;}
 
 .sticky {
   z-index: 9998;
@@ -468,6 +443,21 @@ i {
               MOBILE SECTION
 ----------------------------------------*/
 
+.btn-a:last-child img {
+  height: 60px;
+  width: auto;
+  margin-right: 20px;
+  margin-left: 10%;
+}
+
+.btn-a img {
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
+  margin-left: 10%;
+
+}
+
 .col-mobile{
   margin-top: 30px;
 }
@@ -485,9 +475,8 @@ i {
   padding-left: 3%;
 }
 
-.iphone{
-  width: 55%;
-  -moz-animation-iteration-count: 10;
+#iphone{
+  width: 45%;
 }
 
 .service-mobile div{
@@ -519,12 +508,6 @@ i {
 /*---------------------------------------
             ADRESSES SECTION
 ----------------------------------------*/
-
-.btn-a img{
-  height: 50px;
-  width: auto;
-  margin-right: 20px;
-}
 
 .img-centre {
   width: 88%;
@@ -580,24 +563,28 @@ i {
    background-color: rgba(22, 20, 20, 0.83);
    overflow: hidden;
    opacity: 0.8;
+   z-index: 9997;
+   text-align: left;
+
 }
 
-.topnav-left {
+.topnav-right {
   z-index: 9998;
-  float: left;
-  display: inline-block;
+  float: right;
+  display: block;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 35%;
-  padding-left: 10px;
+  top: 20%;
+  right: 0;
+  width: 120px;
+  height: 330px;
+  padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: left;
 }
 
-.tonav-left a {
-  text-align: center;
+.topnav-right a {
+  text-align: left;
 }
 
 /* Style the links inside the navigation bar */
@@ -605,7 +592,7 @@ i {
    float: left;
    display: block;
    color: #f2f2f2;
-   text-align: center;
+   text-align: left;
    padding: 14px 16px;
    text-decoration: none;
    font-size: 17px;
@@ -793,6 +780,7 @@ input[type=submit],[type=reset] {
 
 #countup {
     position: relative;
+    margin-bottom: 20px;
 }
 
 #countup .countup-box {
@@ -842,7 +830,7 @@ input[type=submit],[type=reset] {
 footer {
   background-color: #333;
   font-size: 120%;
-  padding: 10px 0;
+  padding-top: 15px;
 }
 
 .footer-social {
@@ -857,6 +845,10 @@ footer {
   display: inline-block;
 }
 
+.footer-social a {
+  color: rgb(255, 115, 0);
+}
+
 .footer-nav {
   list-style: none;
   float: left;
@@ -866,8 +858,15 @@ footer {
 
 .footer-nav li {
   display: inline-block;
+  color: rgb(255, 115, 0);
 }
 
+#footpage {
+  color: rgb(255, 115, 0);
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 30%;
+}
 /*-----------------------------
         END FOOTER SECTION
 ------------------------------*/

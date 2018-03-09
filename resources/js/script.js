@@ -6,9 +6,9 @@ $(document).ready(function(){
 
 $(".js--waypoint-infos").waypoint(function(direction){
   if (direction=="down"){
-    $("#myTopnav").addClass("topnav-left");
+    $("#myTopnav").addClass("topnav-right");
   } else {
-    $("#myTopnav").removeClass("topnav-left");
+    $("#myTopnav").removeClass("topnav-right");
   }
 })
 
@@ -48,13 +48,5 @@ $("html, body").animate({scrollTop: $(".js-section-contact").offset().top}, 2000
                     FIN EFFET SCROLL
 ----------------------------------------------------*/
 
-});
 
-/*$(".js--waypoint-infos").waypoint(function(direction){
-  if (direction=="down"){
-    $("nav").addClass("sticky");
-  } else {
-    $("nav").removeClass("sticky");
-  }
-})
-*/
+});
