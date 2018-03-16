@@ -50,17 +50,11 @@
 
 html {
   background: #fff;
-  /* couleur de fond */
   font-family: ‘Lato’, ‘Arial’, sans-serif;
-  /* police de caractère */
   font-weight: 300;
-  /* épaisseur de la police */
   font-size: 20px;
-  /* taille de la police */
   color: #555;
-  /* couleur de la police */
   text-rendering: optimizeLegibility;
-  /*  /// Voir PDF */
 }
 
 header {
@@ -888,6 +882,7 @@ footer {
   background-color: #333;
   font-size: 120%;
   padding-top: 15px;
+  border-bottom: 2px solid #ff7300;
 }
 
 .footer-social {
